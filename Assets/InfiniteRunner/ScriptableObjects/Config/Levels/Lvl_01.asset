@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0c32d7ba8284140bec9623fbc5751a, type: 3}
+  m_Name: Lvl_01
+  m_EditorClassIdentifier: 
+  obstacles:
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 8397718227677244014, guid: 81581197f3b2542f68dae50e0da9e7ae,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 4673376744250468193, guid: fb27f7c22c8121246acd4ba0c73837a8,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 1018170024564097623, guid: 6d3aa9817424da74c801b4c2f719802d,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 7258380492032577179, guid: b104f0f9e610f94408f2ce943f43d669,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 7258380492032577179, guid: dd23bd9a0fcf27040a55371ac04a483f,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 7258380492032577179, guid: e6b16072c80014c4eb34769823f1206a,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 1383806107246781153, guid: 6dd0de28f6ea8904a8ac78c69d1c71d3,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 1383806107246781153, guid: 5f601494dab19de428143caa15acf81e,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 1383806107246781153, guid: 465ce1562de0d9a4c9d5ac42f31cdf0c,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 1383806107246781153, guid: e68725aed6c73fb42887ccfa605f8837,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 7258380492032577179, guid: f8eef024c9c342647851310c19f3f0ef,
+      type: 3}
+  - weight: 10
+    weightMod: 1
+    obstacle: {fileID: 7258380492032577179, guid: 1c0df3fd395a653478312b43babb9203,
+      type: 3}
+  resetObstacle:
+    weight: 10
+    weightMod: 1
+    obstacle: {fileID: 1158062845966451653, guid: 0cf46bb02b2dfcc42820177e31968c06,
+      type: 3}

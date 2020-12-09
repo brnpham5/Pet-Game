@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c776048ee84534e86a136f347be6037d, type: 3}
+  m_Name: Platform Config
+  m_EditorClassIdentifier: 
+  CameraOffset: 7
+  CameraLerpValue: 1
+  SpawnOffset: 22
+  DestroyOffset: -15
+  MaxHeight: 10
+  GroundLevel: -5
+  DeathLevel: -7
