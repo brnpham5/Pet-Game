@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -415,6 +417,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8669711504405051962}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1297868144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4776119161327218963, guid: bef9362c4aef346aeb7092866cdb2dc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8669711504405051962}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297868141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f9550080e38ea44bc7907342abefc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1297868147 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8669711503117901641, guid: bef9362c4aef346aeb7092866cdb2dc2,
@@ -577,6 +591,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1459317459
@@ -1855,6 +1870,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8669711503117901640, guid: bef9362c4aef346aeb7092866cdb2dc2,
+        type: 3}
+      propertyPath: xBound
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669711503117901641, guid: bef9362c4aef346aeb7092866cdb2dc2,
+        type: 3}
+      propertyPath: pScore
+      value: 
+      objectReference: {fileID: 1297868144}
     - target: {fileID: 8669711503117901643, guid: bef9362c4aef346aeb7092866cdb2dc2,
         type: 3}
       propertyPath: m_RootOrder

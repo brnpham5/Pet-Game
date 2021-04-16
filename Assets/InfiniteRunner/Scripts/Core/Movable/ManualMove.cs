@@ -139,6 +139,7 @@ namespace InfiniteRunner {
                         }
                     }
                 }
+                /* Jump Dampen Feature
                 else if (Input.GetKeyUp(KeyCode.UpArrow))
                 {
                     //Dampen velocity if character is moving upwards upon releasing input
@@ -148,6 +149,7 @@ namespace InfiniteRunner {
                         jumpDampen = false;
                     }
                 }
+                */
                 else if (Input.GetKey(KeyCode.RightArrow)) {
                     movable.MoveRight();
                 }
