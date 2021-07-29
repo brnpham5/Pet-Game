@@ -61,6 +61,10 @@ MonoBehaviour:
     weightMod: 1
     obstacle: {fileID: 7258380492032577179, guid: 1c0df3fd395a653478312b43babb9203,
       type: 3}
+  - weight: 20
+    weightMod: 1
+    obstacle: {fileID: 918797584549024611, guid: 0666847ef0ac65f44a5143cca747941c,
+      type: 3}
   resetObstacle:
     weight: 10
     weightMod: 1

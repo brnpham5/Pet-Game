@@ -20,11 +20,6 @@ namespace InfiniteRunner {
         public int qIndex = 0;
         public List<ObstacleData> weightQueue = new List<ObstacleData>();
 
-        private void Awake()
-        {
-            InitializePool(currentLevel.data.resetObstacle, 0, 0);
-        }
-
         private void InitializePool(ObstacleData data, float weight, float weightMod)
         {
             pool.Add(data, new ObstaclePool { 
@@ -40,6 +35,10 @@ namespace InfiniteRunner {
         /// Initialize lists for pool
         /// </summary>
         public void SetupLevel() {
+            if(pool.ContainsKey(currentLevel.data.resetObstacle) == false)
+            {
+                InitializePool(currentLevel.data.resetObstacle, 0, 0);
+            }
             currentLevel.data.obstacles.ForEach(obData => {
                 if(pool.ContainsKey(obData) == false) {
                     InitializePool(obData, obData.weight, obData.weightMod);

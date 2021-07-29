@@ -8,10 +8,10 @@ namespace InfiniteRunner
     [RequireComponent(typeof(Floatable))]
     public class BehaviourSpider : EnemyBehaviour
     {
-        public Floatable floatable;
+        public delegate void SpiderDelegate();
+        public event SpiderDelegate OnEatFly;
 
-        [Header("Scene Reference")]
-        public Transform fly;
+        public Floatable floatable;
 
         private void Awake()
         {
@@ -28,7 +28,7 @@ namespace InfiniteRunner
 
         public override void Move()
         {
-            floatable.MoveTowards(fly.position);
+            floatable.MoveDown();
         }
 
         public override IEnumerator BehaviourCoroutine()
@@ -65,9 +65,7 @@ namespace InfiniteRunner
             GameObject obj = collision.gameObject;
             if (obj.CompareTag(Meta_Tags.floatStop))
             {
-                FloatStop();
-                SpiderFlyController fly = obj.GetComponent<SpiderFlyController>();
-                fly.Death();
+                OnEatFly?.Invoke();
             }
         }
     }

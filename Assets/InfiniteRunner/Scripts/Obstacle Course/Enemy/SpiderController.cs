@@ -26,6 +26,12 @@ namespace InfiniteRunner
             web.SetActive(true);
         }
 
+        public void StopMovement()
+        {
+            spider.StopBehaviour();
+            fly.Death();
+        }
+
         public void Death()
         {
             web.SetActive(false);
@@ -34,6 +40,16 @@ namespace InfiniteRunner
         private void OnDestroy()
         {
             obstComp.OnSetup -= Setup;
+        }
+
+        private void OnEnable()
+        {
+            spider.OnEatFly += StopMovement;
+        }
+
+        private void OnDisable()
+        {
+            spider.OnEatFly -= StopMovement;
         }
     }
 
